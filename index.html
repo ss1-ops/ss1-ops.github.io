@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam Snyder • Robotics Engineer | Austin, TX</title>
+  <meta name="description" content="Sam Snyder — Robotics Engineer & Automation Specialist. Precision mechatronics, ROS2, micro-ROS, PLCs, Onshape/SolidWorks, high-rate production. Ex-Gamma, Canyon Magnet, Pascal Tags, Ukrainian UAV.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .font-display { font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif; letter-spacing: -0.025em; }
+    .section-header { font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: #64748b; }
+    .skill-tag { display:inline-block; padding: 1px 9px; font-size: .7rem; border-radius: 9999px; background: #27272a; color:#d1d5db; border:1px solid #3f3f46; }
+    .nav-link { transition: color .1s; } .nav-link:hover { color:#38bdf8; }
+    .robot-grid { background-image: linear-gradient(rgba(148,163,184,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.07) 1px, transparent 1px); background-size: 26px 26px; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 antialiased">
+  <nav class="fixed top-0 inset-x-0 z-50 bg-zinc-950/95 backdrop-blur border-b border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-x-3">
+        <div class="w-8 h-8 rounded-2xl bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center text-zinc-950 font-bold text-lg tracking-tighter">SS</div>
+        <div class="font-semibold tracking-tight">Sam Snyder</div>
+      </div>
+      <div class="hidden md:flex items-center gap-x-7 text-sm">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="flex items-center gap-x-2">
+        <button onclick="toggleTheme()" class="w-8 h-8 grid place-items-center rounded-xl border border-zinc-800 hover:bg-zinc-900 text-zinc-400" aria-label="Toggle theme">◐</button>
+        <a href="https://github.com/ss1-ops" target="_blank" class="hidden sm:block px-3 py-1 text-sm rounded-2xl border border-zinc-800 hover:bg-zinc-900">GitHub</a>
+        <a href="#contact" class="px-5 py-1.5 rounded-2xl bg-white text-zinc-950 text-sm font-semibold active:scale-[0.985] transition">Get in touch</a>
+        <button onclick="document.getElementById('m').classList.toggle('hidden')" class="md:hidden px-3 py-1 border border-zinc-800 rounded-xl">☰</button>
+      </div>
+    </div>
+    <div id="m" class="hidden md:hidden px-6 py-3 text-sm border-t border-zinc-800 bg-zinc-950 flex flex-col gap-y-2">
+      <a href="#about" class="nav-link">About</a><a href="#experience" class="nav-link">Experience</a><a href="#projects" class="nav-link">Projects</a><a href="#skills" class="nav-link">Skills</a><a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <header class="pt-14">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-10">
+      <div class="grid md:grid-cols-12 gap-x-8 items-center">
+        <div class="md:col-span-7">
+          <div class="inline-flex rounded-3xl border border-zinc-800 px-3 py-1 text-[10px] tracking-[1.5px] text-zinc-400 mb-5">OPEN TO SENIOR ROBOTICS / AUTOMATION ROLES — AUSTIN &amp; SELECT REMOTE</div>
+          <h1 class="font-display text-6xl md:text-7xl font-semibold tracking-[-2.8px] leading-none">Sam Snyder</h1>
+          <p class="mt-2 text-2xl md:text-[28px] text-zinc-400 tracking-tight">Robotics Engineer <span class="text-zinc-600">·</span> Automation <span class="text-zinc-600">·</span> Precision Mechatronics</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#projects" class="inline-flex h-11 items-center px-7 rounded-3xl bg-sky-400 text-zinc-950 font-semibold text-[15px] active:bg-white">Featured projects</a>
+            <a href="#contact" class="inline-flex h-11 items-center px-6 rounded-3xl border border-zinc-700 hover:bg-zinc-900 text-[15px]">Contact</a>
+            <a href="./Sam_Snyder_CV_2026.pdf" download class="inline-flex h-11 items-center px-5 rounded-3xl border border-zinc-700 hover:bg-zinc-900 text-[15px]">CV (PDF)</a>
+          </div>
+          <div class="mt-6 text-sm text-zinc-400 flex flex-wrap gap-x-4">
+            <div>Austin, TX</div>
+            <a href="mailto:sam@samhsnyder.com" class="hover:text-zinc-200">sam@samhsnyder.com</a>
+            <a href="https://linkedin.com/in/samhsnyder" target="_blank" class="hover:text-zinc-200">LinkedIn</a>
+            <a href="https://github.com/ss1-ops" target="_blank" class="hover:text-zinc-200">GitHub</a>
+          </div>
+        </div>
+        <div class="md:col-span-5 mt-8 md:mt-0">
+          <div class="relative mx-auto w-full max-w-[280px] aspect-square rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900">
+            <div class="absolute inset-0 robot-grid"></div>
+            <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-zinc-950/10 to-zinc-950/70">
+              <div class="text-center">
+                <div class="text-6xl mb-2">🤖</div>
+                <div class="font-display text-xl tracking-tight">Sam Snyder</div>
+                <div class="text-[10px] text-zinc-500 mt-0.5">ROBOTICS • MECHATRONICS • MANUFACTURING</div>
+              </div>
+            </div>
+            <div class="absolute bottom-4 right-4 text-[9px] font-mono bg-black/60 px-1.5 py-px rounded border border-white/10">REPLACE PHOTO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="max-w-6xl mx-auto px-6 py-10 border-t border-zinc-800">
+    <div class="section-header mb-3">About</div>
+    <div class="max-w-2xl text-[15px] md:text-[16px] leading-relaxed space-y-4">
+      <p>Dynamic automation and robotics engineering leader with over a decade of hands-on experience designing and deploying vision-guided robotics, precision mechatronics, control systems integration, and DFM/DFA-optimized manufacturing solutions.</p>
+      <p>Proven in scaling prototypes to high-rate production in agile, high-growth environments, including a successful tech startup exit after growing a distributed-compute platform to millions of users.</p>
+      <p>Expert in integrating ROS2, micro-ROS, ESP32, PLCs, and AI-driven systems for complex, high-precision applications across defense, advanced manufacturing, and industrial automation.</p>
+      <p>Based in Austin, TX. Strong foundation in Physics at Stony Brook University and Mechanical Engineering studies at NYU. Passionate about end-to-end hardware + software ownership in robotics and advanced manufacturing.</p>
+    </div>
+    <div class="mt-7 grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs">
+      <div class="rounded-2xl border border-zinc-800 py-3"><div class="text-xl font-semibold text-sky-400 tabular-nums">5+</div><div class="text-zinc-500">years deep stack</div></div>
+      <div class="rounded-2xl border border-zinc-800 py-3"><div class="text-xl font-semibold text-sky-400 tabular-nums">2.5M</div><div class="text-zinc-500">users scaled (Gamma)</div></div>
+      <div class="rounded-2xl border border-zinc-800 py-3"><div class="text-xl font-semibold text-sky-400 tabular-nums">60%</div><div class="text-zinc-500">cost reduction (winding)</div></div>
+      <div class="rounded-2xl border border-zinc-800 py-3"><div class="text-xl font-semibold text-sky-400 tabular-nums">5–10 km</div><div class="text-zinc-500">UAV standoff</div></div>
+    </div>
+  </section>
+
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-10 border-t border-zinc-800">
+    <div class="mb-5"><div class="section-header">Experience</div><h2 class="text-3xl font-semibold tracking-tight mt-1">Prototype to production at scale.</h2></div>
+    <div class="max-w-3xl"><article class="experience-item relative pl-8 border-l-2 border-zinc-800 dark:border-zinc-700 mb-10 last:mb-0">
+  <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-sky-400 ring-4 ring-zinc-950"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3">
+    <span class="font-mono text-sm text-sky-400/90 whitespace-nowrap">Nov 2025 – Present</span>
+    <h3 class="text-xl font-semibold">Systems Engineer, Hardware/Automation <span class="text-zinc-400 font-normal">— Ukrainian Unmanned Vehicle Battalion (Kharkiv / remote)</span></h3>
+  </div>
+  <ul class="mt-3 space-y-1.5 text-[15px] text-zinc-300">
+    <li>Managed cross-functional teams of 8–12 and trained UAV pilots on advanced remote/autonomous systems in high-threat forward environments.</li>
+    <li>Led electrical + mechanical design, rapid prototyping and R&D — reduced new drone feature dev time by ~40%.</li>
+    <li>Designed remote-activated drone launch boxes enabling 5–10 km standoff operation, minimizing operator exposure beyond the zero line of contact.</li>
+    <li>Developed kamikaze drone hibernate/sleep + multi-sensor (accel/PIR/seismic) triggering; achieved 47-day standby and 60–75% improved strike success in contested EW via low-power/low-detectability.</li>
+    <li>Built supporting mesh (LoRa + Meshtastic + ExpressLRS), FastAPI/WebSocket HMI, ROS2 digital twin, and two-person crypto auth systems. 7 launch boxes + 23 airframes fielded.</li>
+  </ul>
+  <div class="mt-2 text-xs uppercase tracking-widest text-zinc-500">ROS2 • ESP32-S3 • LoRa/Mesh • FastAPI • Field deployment</div>
+</article>
+
+<article class="experience-item relative pl-8 border-l-2 border-zinc-800 dark:border-zinc-700 mb-10 last:mb-0">
+  <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-sky-400 ring-4 ring-zinc-950"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3">
+    <span class="font-mono text-sm text-sky-400/90 whitespace-nowrap">May – Nov 2025</span>
+    <h3 class="text-xl font-semibold">Head of Automation <span class="text-zinc-400 font-normal">— Pascal Tags (Louisville, KY)</span></h3>
+  </div>
+  <ul class="mt-3 space-y-1.5 text-[15px] text-zinc-300">
+    <li>Commissioned full end-to-end automation for Nordson ProPlus4 robotic syringe printer in chipless RFID production using Rockwell Allen-Bradley Micro 820 PLC.</li>
+    <li>Designed and implemented custom multiplexed binary protocol over 8 digital I/O channels (3-bit tag position + 4-bit bit index) with deterministic FIFO sequencing, fiducial compensation, and integrated UV cure control. Scaled from 42 tags/hr semi-manual to automated traceable production.</li>
+    <li>Built hybrid FastAPI + WebSocket HMI (pycomm3 Ethernet/IP) for real-time monitoring, CSV job upload (up to 1,999 tags), and operator control. Time-critical logic stayed on PLC; server handled sequencing/UI.</li>
+    <li>Designed 3D-printed fixtures (UV cure mounts with heat fins, 8-up magnet tag holders, Nordson clamps), Arduino-controlled vacuum pick-and-place tag applier, and automated FR4 card dispenser (elevator + photogate + servo trap door).</li>
+    <li>Produced full production scaling roadmap + CapEx model targeting 5M–10M tags/year; supported DoD uniform tagging and Brown-Forman barrel applications.</li>
+  </ul>
+  <div class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Allen-Bradley Micro 820 • Nordson • FastAPI/WS • pycomm3 • SolidWorks • 3D printing • DFM</div>
+</article>
+
+<article class="experience-item relative pl-8 border-l-2 border-zinc-800 dark:border-zinc-700 mb-10 last:mb-0">
+  <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-sky-400 ring-4 ring-zinc-950"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3">
+    <span class="font-mono text-sm text-sky-400/90 whitespace-nowrap">Apr 2024 – May 2025</span>
+    <h3 class="text-xl font-semibold">Director of Production <span class="text-zinc-400 font-normal">— Canyon Magnet Energy (Stony Brook, NY)</span></h3>
+  </div>
+  <ul class="mt-3 space-y-1.5 text-[15px] text-zinc-300">
+    <li>Oversaw production of high-temperature superconducting (REBCO) electromagnets for fusion and space propulsion applications.</li>
+    <li>Designed and built first-generation robotic winding table (pay-off spool + tension control, servo-driven mandrel with encoder, Beckhoff TwinCAT real-time controller + CAM tables). Cut production cost 60%, increased throughput 30%.</li>
+    <li>Enabled prototype rates of 10–20 coils/month with documented path to 50–100/month via fixtures and process. Led technical pitches securing fusion/aerospace partnerships.</li>
+  </ul>
+  <div class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Beckhoff TwinCAT • Servo motion • REBCO winding • Cryogenics • DFM • Supply chain</div>
+</article>
+
+<article class="experience-item relative pl-8 border-l-2 border-zinc-800 dark:border-zinc-700 mb-10 last:mb-0">
+  <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-sky-400 ring-4 ring-zinc-950"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3">
+    <span class="font-mono text-sm text-sky-400/90 whitespace-nowrap">2019 – 2024</span>
+    <h3 class="text-xl font-semibold">Engineering Director <span class="text-zinc-400 font-normal">— AJC (New York, NY)</span></h3>
+  </div>
+  <ul class="mt-3 space-y-1.5 text-[15px] text-zinc-300">
+    <li>Directed precision manufacturing for a metal foundry serving Apple, Samsung and other high-end clients using 5-axis CNC, lost-wax casting, and 3D printing (SLA/FDM).</li>
+    <li>Achieved 150% YoY growth, doubled client base to 50+, reduced production timelines 62% via CNC optimization and process improvements. Managed 8-person shop floor.</li>
+  </ul>
+  <div class="mt-2 text-xs uppercase tracking-widest text-zinc-500">5-axis CNC (HAAS/Fanuc) • Lost-wax • 3D printing • GD&amp;T • Team leadership • DFM/DFA</div>
+</article>
+
+<article class="experience-item relative pl-8 border-l-2 border-zinc-800 dark:border-zinc-700 mb-10 last:mb-0">
+  <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-sky-400 ring-4 ring-zinc-950"></div>
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3">
+    <span class="font-mono text-sm text-sky-400/90 whitespace-nowrap">2016 – 2019</span>
+    <h3 class="text-xl font-semibold">Co-founder &amp; COO <span class="text-zinc-400 font-normal">— Gamma Innovations, Inc. (Los Angeles, CA)</span></h3>
+  </div>
+  <ul class="mt-3 space-y-1.5 text-[15px] text-zinc-300">
+    <li>Co-founded distributed supercomputer platform (consumer GPU/CPU marketplace). Raised $2.7M from top VCs and angels (Unity, Google Maps, Zynga, Greycroft, Razer).</li>
+    <li>Scaled to 550K+ downloads, reached profitability, drove successful exit (acquired by Animoca Brands, Jun 2019).</li>
+  </ul>
+  <div class="mt-2 text-xs uppercase tracking-widest text-zinc-500">Fundraising • Distributed systems • Marketplace • M&amp;A • Team scaling (2.5M users)</div>
+</article></div>
+  </section>
+
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-10 border-t border-zinc-800">
+    <div class="mb-5"><div class="section-header">Featured Projects</div><h2 class="text-3xl font-semibold tracking-tight mt-1">Real hardware. Real software. Real constraints.</h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">6-DOF Robotic Arm + Aero Hand</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-400/10 text-sky-400">ACTIVE</span>
+    </div>
+    <p class="mt-2 text-sm text-zinc-400">Client-commissioned BCN3D Moveo (6-DOF) with fully-actuated Aero Hand gripper. End-to-end autonomous pick-and-place via computer vision on Raspberry Pi ROS2 stack.</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">ROS2 Jazzy</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">MoveIt2</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">ESP32-S3 + micro-ROS</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">OpenCV (eye-in-hand)</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">URDF/Xacro</span>
+    </div>
+    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
+      <li>• Real-time joint state (target 10 ms cycle), MoveIt2 IK/trajectory planning</li>
+      <li>• micro-ROS agent on ESP32-S3: 5× stepper drivers + servo gripper, quadrature feedback, OTA</li>
+      <li>• Stereo vision plan + hand-eye calibration for visual servoing (5–10 mm target accuracy)</li>
+    </ul>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">ROS2 • micro-ROS • firmware ↔ motion planning ↔ CV</div>
+  </div>
+
+  <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">FANUC RMI Mock + Moveo Bridge</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-400/10 text-amber-400">INTERVIEW ARTIFACT</span>
+    </div>
+    <p class="mt-2 text-sm text-zinc-400">Reverse-engineered full FANUC RMI server (from valstad-shipworks/fanuc_ucl serde models). Drives real physical BCN3D Moveo 6-DOF arm using the library's own unmodified example code.</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Python stdlib</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">JSON TCP (16001/16002)</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Protocol reverse-eng</span>
+    </div>
+    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
+      <li>• Complete handshake, strict FIFO blocking motion commands, JointMotion, Linear, status, I/O, UFrames</li>
+      <li>• Pluggable bridges (sim with 3D viz, direct rclpy ROS2, Pi TCP socket) matched to real arm firmware contract</li>
+      <li>• Exact handling of FANUC J2/J3 coupling as the real library expects</li>
+    </ul>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Ideal for Valstad, Tesla, shipyard, or any FANUC-heavy robotics integrator role</div>
+  </div>
+
+  <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">Pascal Tags — Full Automation Stack</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-400">PRODUCTION</span>
+    </div>
+    <p class="mt-2 text-sm text-zinc-400">Head of Automation for chipless RFID tag production. End-to-end PLC + robot + web HMI + custom 3D-printed hardware for a 5 µm tolerance dielectric dot printing line.</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Allen-Bradley Micro 820</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Nordson ProPlus4</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">FastAPI + WebSocket</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">pycomm3</span>
+    </div>
+    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
+      <li>• Custom 8 I/O binary protocol (3-bit position select + 4-bit bit index) with run pulse, fiducial correction, UV cure integration</li>
+      <li>• 3D printed production tooling: UV cure heads, 8-up magnet fixtures, Nordson clamps, vacuum pick-and-place applier, FR4 dispenser</li>
+      <li>• Full rate + CapEx model for 5M–10M tags/year scaling</li>
+    </ul>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">PLC ↔ device protocol design • Hybrid real-time control + modern HMI pattern</div>
+  </div>
+
+  <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">Valstad QC Laser Profiling Gantry</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-violet-400/10 text-violet-400">CAD + GD&amp;T</span>
+    </div>
+    <p class="mt-2 text-sm text-zinc-400">Complete mechanical design + BOM + rigorous tolerance stack analysis for a 20 m laser profiling quality control station targeting ±0.1 mm accuracy over full range.</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">SolidWorks</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">GD&amp;T / Tolerance stack</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Hiwin • Renishaw • Gocator</span>
+    </div>
+    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
+      <li>• Full cumulative error analysis from optics mount through long-range rails to sensor alignment</li>
+      <li>• Modular phased architecture (manual Phase 1 → servo motion Phase 2) with repeatable kinematic datums</li>
+      <li>• Production-ready BOM with QA checkpoints and sourcing for 20 m precision linear motion</li>
+    </ul>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Precision long-range metrology • Shipyard QC DFM</div>
+  </div>
+
+  <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col md:col-span-2">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">Precision Mechatronics Examples: Winding Station + Auto Door Handle</h3>
+    </div>
+    <div class="mt-3 grid md:grid-cols-2 gap-x-6 text-sm">
+      <div>
+        <div class="font-medium">Canyon Magnet Robotic Winding Table</div>
+        <div class="text-zinc-400 text-xs mt-1">Beckhoff TwinCAT real-time + servo + tension control for REBCO HTS tape. 60% cost reduction, 30% throughput increase. CAM tables for complex coil geometry. Prototype → production path documented.</div>
+      </div>
+      <div class="mt-3 md:mt-0">
+        <div class="font-medium">OpenSesame Auto Door Handle</div>
+        <div class="text-zinc-400 text-xs mt-1">ESP32-S3 + BLE iPhone app + L298N DC gear motor + limit switches + 3D-printed drive. Full open-hold-close cycle on tap. Daily driver on apartment door. Shows firmware + mechanism + UX integration.</div>
+      </div>
+    </div>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Real-time controls • Actuation • 3D-printed mechanisms • BLE firmware • End-to-end ownership</div>
+  </div>
+</div>
+    <p class="mt-5 text-xs text-zinc-500">Deeper demos, videos, and private repo access available on request. Many pieces were built for clients or interview validation.</p>
+  </section>
+
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-10 border-t border-zinc-800">
+    <div class="mb-5"><div class="section-header">Skills</div><h2 class="text-3xl font-semibold tracking-tight mt-1">Firmware to factory floor.</h2></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">Robotics &amp; Motion Control</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">ROS2 Jazzy</span><span class="skill-tag">MoveIt2</span><span class="skill-tag">micro-ROS</span>
+      <span class="skill-tag">URDF/Xacro</span><span class="skill-tag">FANUC RMI</span><span class="skill-tag">OpenCV</span>
+      <span class="skill-tag">Visual Servoing</span><span class="skill-tag">Kinematics + IK</span>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">Embedded &amp; Firmware</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">ESP32-S3 (FreeRTOS)</span><span class="skill-tag">Arduino / C++</span><span class="skill-tag">PWM + Quadrature</span>
+      <span class="skill-tag">SPI / I2C / CAN / UART</span><span class="skill-tag">OTA updates</span><span class="skill-tag">Deterministic loops</span>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">Controls &amp; Industrial</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">Allen-Bradley Micro 820</span><span class="skill-tag">Beckhoff TwinCAT</span>
+      <span class="skill-tag">Ladder + Structured Text</span><span class="skill-tag">EtherNet/IP (pycomm3)</span>
+      <span class="skill-tag">Real-time CAM tables</span><span class="skill-tag">Binary/JSON protocol design</span>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">CAD &amp; Mechanical Design</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">SolidWorks</span><span class="skill-tag">Fusion 360</span><span class="skill-tag">Onshape</span>
+      <span class="skill-tag">Rhino 3D + KiCAD</span><span class="skill-tag">GD&amp;T</span><span class="skill-tag">DFM/DFA</span>
+      <span class="skill-tag">FEA (ANSYS)</span><span class="skill-tag">5-axis CNC toolpaths</span>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">Manufacturing &amp; Production</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">High-rate production scaling</span><span class="skill-tag">Vision-guided robotics cells</span>
+      <span class="skill-tag">CNC + robotic automation</span><span class="skill-tag">CapEx + rate modeling</span>
+      <span class="skill-tag">80/20 + custom fixtures</span><span class="skill-tag">Tolerance stack analysis</span>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-sky-400 mb-2 tracking-wide">Software &amp; Systems</h4>
+    <div class="flex flex-wrap gap-1.5">
+      <span class="skill-tag">Python (primary, 10k+ LOC)</span><span class="skill-tag">C++ (real-time/embedded)</span>
+      <span class="skill-tag">FastAPI + WebSocket</span><span class="skill-tag">Git + GitHub Actions</span>
+      <span class="skill-tag">ROS2 nodes + launch files</span><span class="skill-tag">Tailwind/JS UIs</span>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-6 border-t border-zinc-800">
+    <div class="section-header mb-2">Education</div>
+    <div class="text-sm grid md:grid-cols-3 gap-y-1">
+      <div><span class="font-medium">Physics</span> — Stony Brook University</div>
+      <div><span class="font-medium">Mechanical Engineering</span> — NYU Tandon</div>
+      <div><span class="font-medium">Product Design</span> — Parsons School of Design</div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 border-t border-zinc-800 bg-zinc-900/40">
+    <div class="max-w-xl">
+      <div class="section-header">Contact</div>
+      <h2 class="mt-1 text-4xl font-semibold tracking-tight">Let's build precise things.</h2>
+      <div class="mt-6 space-y-2 text-[15px]">
+        <div><a href="mailto:sam@samhsnyder.com" class="hover:text-sky-400">sam@samhsnyder.com</a></div>
+        <div><a href="https://linkedin.com/in/samhsnyder" target="_blank" class="hover:text-sky-400">linkedin.com/in/samhsnyder</a></div>
+        <div><a href="https://github.com/ss1-ops" target="_blank" class="hover:text-sky-400">github.com/ss1-ops</a></div>
+        <div class="pt-1"><a href="./Sam_Snyder_CV_2026.pdf" download class="inline-block px-4 py-1.5 text-sm rounded-2xl border border-zinc-700 hover:bg-zinc-900">Download CV</a></div>
+      </div>
+      <div class="mt-8 text-xs text-zinc-500">Source: <a href="https://github.com/ss1-ops/ss1-ops.github.io" class="underline">github.com/ss1-ops/ss1-ops.github.io</a></div>
+    </div>
+  </section>
+
+  <footer class="text-center text-xs text-zinc-500 py-8 border-t border-zinc-800">© Sam Snyder — Robotics, Automation &amp; Precision Mechatronics. Austin, TX.</footer>
+
+  <script>
+    function configureTailwind(){ /* tailwind cdn already loaded */ }
+    function toggleTheme(){
+      const h = document.documentElement;
+      if (h.classList.contains('dark')) { h.classList.remove('dark'); localStorage.theme='light'; }
+      else { h.classList.add('dark'); localStorage.theme='dark'; }
+    }
+    function initTheme(){
+      const h = document.documentElement;
+      const s = localStorage.getItem('theme');
+      if (s === 'light') h.classList.remove('dark');
+      else h.classList.add('dark');
+    }
+    function initScroll(){
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{
+          const t = document.querySelector(a.getAttribute('href'));
+          if(t){ e.preventDefault(); window.scrollTo({top: t.getBoundingClientRect().top + window.scrollY - 60, behavior:'smooth'}); document.getElementById('m').classList.add('hidden'); }
+        });
+      });
+    }
+    function init(){ configureTailwind(); initTheme(); initScroll(); }
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
