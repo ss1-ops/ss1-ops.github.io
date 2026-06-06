@@ -192,25 +192,6 @@
     <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">ROS2 • micro-ROS • firmware ↔ motion planning ↔ CV</div>
   </a>
 
-  <a href="https://github.com/ss1-ops/fanuc-demo" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
-    <div class="flex items-start justify-between">
-      <h3 class="font-semibold text-xl tracking-tight">FANUC RMI Mock + Moveo Bridge</h3>
-      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-400/10 text-amber-400">INTERVIEW ARTIFACT</span>
-    </div>
-    <p class="mt-2 text-sm text-zinc-400">Reverse-engineered full FANUC RMI server (from valstad-shipworks/fanuc_ucl serde models). Drives real physical BCN3D Moveo 6-DOF arm using the library's own unmodified example code.</p>
-    <div class="mt-4 flex flex-wrap gap-1.5">
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Python stdlib</span>
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">JSON TCP (16001/16002)</span>
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Protocol reverse-eng</span>
-    </div>
-    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
-      <li>• Complete handshake, strict FIFO blocking motion commands, JointMotion, Linear, status, I/O, UFrames</li>
-      <li>• Pluggable bridges (sim with 3D viz, direct rclpy ROS2, Pi TCP socket) matched to real arm firmware contract</li>
-      <li>• Exact handling of FANUC J2/J3 coupling as the real library expects</li>
-    </ul>
-    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Protocol reverse-engineering • Exact RMI fidelity (FIFO, J2/J3 coupling) • Pluggable sim/ROS2/physical bridges</div>
-  </a>
-
   <a href="https://github.com/ss1-ops/nordson-syringe-robotic-automation" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
     <div class="flex items-start justify-between">
       <h3 class="font-semibold text-xl tracking-tight">Pascal Tags — Full Automation Stack</h3>
@@ -229,6 +210,25 @@
       <li>• Full rate + CapEx model for 5M–10M tags/year scaling</li>
     </ul>
     <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">PLC ↔ device protocol design • Hybrid real-time control + modern HMI pattern</div>
+  </a>
+
+  <a href="https://github.com/ss1-ops/hts-tape-winder" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+    <div class="flex items-start justify-between">
+      <h3 class="font-semibold text-xl tracking-tight">Superconducting Magnet Winding Table</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-400">MANUFACTURING</span>
+    </div>
+    <p class="mt-2 text-sm text-zinc-400">Beckhoff TwinCAT real-time + servo + tension control for REBCO HTS tape. 60% cost reduction, 30% throughput increase. CAM tables for complex coil geometry. Prototype → production path documented.</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Beckhoff TwinCAT</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Servo Motion</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Tension Control</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">CAM Tables</span>
+    </div>
+    <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
+      <li>• Real-time controller + CAM tables for complex coil geometry</li>
+      <li>• 60% cost reduction, 30% throughput increase vs manual winding</li>
+    </ul>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Real-time controls • DFM • HTS tape winding • Prototyping</div>
   </a>
 
   <div class="group rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
@@ -250,23 +250,23 @@
     <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Precision long-range metrology • Shipyard QC DFM</div>
   </div>
 
-  <a href="https://github.com/ss1-ops/hts-tape-winder" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
+  <a href="https://github.com/ss1-ops/fanuc-demo" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
     <div class="flex items-start justify-between">
-      <h3 class="font-semibold text-xl tracking-tight">Superconducting Magnet Winding Table</h3>
-      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-400">MANUFACTURING</span>
+      <h3 class="font-semibold text-xl tracking-tight">FANUC RMI Mock + Moveo Bridge</h3>
+      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-400/10 text-amber-400">INTERVIEW ARTIFACT</span>
     </div>
-    <p class="mt-2 text-sm text-zinc-400">Beckhoff TwinCAT real-time + servo + tension control for REBCO HTS tape. 60% cost reduction, 30% throughput increase. CAM tables for complex coil geometry. Prototype → production path documented.</p>
+    <p class="mt-2 text-sm text-zinc-400">Reverse-engineered full FANUC RMI server (from valstad-shipworks/fanuc_ucl serde models). Drives real physical BCN3D Moveo 6-DOF arm using the library's own unmodified example code.</p>
     <div class="mt-4 flex flex-wrap gap-1.5">
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Beckhoff TwinCAT</span>
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Servo Motion</span>
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Tension Control</span>
-      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">CAM Tables</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Python stdlib</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">JSON TCP (16001/16002)</span>
+      <span class="text-xs px-2 py-px rounded-full bg-zinc-800 text-zinc-300">Protocol reverse-eng</span>
     </div>
     <ul class="mt-4 text-sm space-y-1 text-zinc-300 flex-1">
-      <li>• Real-time controller + CAM tables for complex coil geometry</li>
-      <li>• 60% cost reduction, 30% throughput increase vs manual winding</li>
+      <li>• Complete handshake, strict FIFO blocking motion commands, JointMotion, Linear, status, I/O, UFrames</li>
+      <li>• Pluggable bridges (sim with 3D viz, direct rclpy ROS2, Pi TCP socket) matched to real arm firmware contract</li>
+      <li>• Exact handling of FANUC J2/J3 coupling as the real library expects</li>
     </ul>
-    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Real-time controls • DFM • HTS tape winding • Prototyping</div>
+    <div class="mt-4 text-xs text-zinc-500 group-hover:text-sky-400/70 transition">Protocol reverse-engineering • Exact RMI fidelity (FIFO, J2/J3 coupling) • Pluggable sim/ROS2/physical bridges</div>
   </a>
 
   <a href="https://github.com/ss1-ops/auto-door-handle" target="_blank" class="group block rounded-2xl border border-zinc-800 dark:border-zinc-700 bg-zinc-900/40 hover:border-sky-500/40 transition-all p-6 flex flex-col">
